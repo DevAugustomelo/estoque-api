@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 // Consumindo o Submódulo 1
-const regrasPath = path.join(__dirname, '../../../contracts/regras_produtos.json');
+const regrasPath = path.join(__dirname, '../../contracts/regras_produtos.json');
 const regras = JSON.parse(fs.readFileSync(regrasPath, 'utf8'));
 let inventario = [
     { sku: "PROD-1", qtd: 15 }
